@@ -3,7 +3,7 @@ on: [pull-request]
 
 jobs:
  job1:
-    runs-on: "ubuntu-latest"
-  - name: "echo to the work flow"
-    steps:
-    run: echo "runs whenever a pr is closed"
+    - name: "echo to the work flow"
+      runs-on: "ubuntu-latest"
+       steps:
+         run: echo "runs whenever a pr is closed"
