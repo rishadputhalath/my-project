@@ -1,0 +1,9 @@
+name: "05-2-Event Filters and Activity Types"
+on: [pull-request]
+
+jobs:
+ job1:
+  - name: "echo to the work flow"
+    steps:
+    runs-on: "ubuntu-latest"
+    run:echo "runs whenever a pr is closed"
